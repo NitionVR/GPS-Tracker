@@ -25,3 +25,8 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+*.pbf
+graphhopper
+graphhopper-web-10.0.jar
+cycling_model.json
+

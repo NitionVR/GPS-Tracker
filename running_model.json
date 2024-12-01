@@ -1,0 +1,18 @@
+{
+  "priority": [
+    {
+      "if": "road_environment == FOREST",
+      "multiply_by": "1.5"
+    },
+    {
+      "if": "road_class == PRIMARY",
+      "multiply_by": "0.7"
+    }
+  ],
+  "speed": [
+    {
+      "if": "elevation > 300",
+      "multiply_by": "0.8"
+    }
+  ]
+}
