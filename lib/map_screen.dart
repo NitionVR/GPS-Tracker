@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
+import 'package:dio/dio.dart';
 
 class MapScreen extends StatefulWidget {
   @override
@@ -52,6 +53,19 @@ class _MapScreenState extends State<MapScreen> {
       16.0,
     );
   }
+
+  Future<List<String>> _getLocationSuggestions(String query) async{
+
+    final String apiUrl = "";
+    final response = await Dio().get(apiUrl);
+
+    if (response.statusCode == 200){
+      List<dynamic> results = response.data;
+      return results.map((result) => result['display_name'] as String).toList();
+    }
+    return [];
+  }
+
 
   void _toggleTracking() {
     setState(() {
