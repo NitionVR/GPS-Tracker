@@ -29,4 +29,8 @@ doc/api/
 graphhopper
 graphhopper-web-10.0.jar
 cycling_model.json
-
+graph-cache
+srtmprovider
+south-africa-latest.osm.pbf
+running_model.json
+gps_tracker_and_map.iml
