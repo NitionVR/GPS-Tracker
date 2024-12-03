@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'map_screen.dart'; // Import the MapScreen file
+import 'map_screen.dart';
 
 void main() {
   runApp(MyApp());
